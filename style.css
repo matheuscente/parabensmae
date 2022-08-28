@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-content: center;
     background: rgb(236, 176, 186);
-    margin: 100px;
+    margin: 10px;
     background-image: url("./img/coracao-72.svg");
     background-size: 8%;
     
@@ -12,21 +12,23 @@ body {
 
 
 .conteudo {
-    min-height: 1400px;
-    max-height: 2000px;
+    margin-top: 2rem;
+    max-width: 600px;
+    max-height: 900px;
     display: grid;
     background: pink;
-    min-width: 1200px;
     border-radius: 4px;
     box-shadow: 8px 8px 8px  rgb(202, 152, 160);
     justify-content: center;
     position: relative;
+    gap: 10px;
 
    
 }
 
 .coracao {
     justify-self: center;
+    width: 60%;
 }
 
 
@@ -54,15 +56,14 @@ h1 {
     animation-iteration-count: infinite;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12rem;
+    font-size: 4rem;
     letter-spacing: 1rem;
     color: red;
 }
 
 #analogo {
-    padding: 40px 1px;
-    height: 600px;
-    width: 1000px;
+    height: 420px;
+    width: 700px;
     justify-self: center;
     position: relative;
 
@@ -72,7 +73,7 @@ h1 {
     position: absolute;
     font-family: feeling lovely;
     color: #70514e;
-    font-size: 4rem;
+    font-size: 3rem;
     list-style: none;
     text-align: center;
     top: 50%;
@@ -129,8 +130,8 @@ h1 {
 }
 
 #botao {
-    padding: 40px;
-    font-size: 2rem;
+    padding: 20px;
+    font-size: 1rem;
     background: red;
     border-radius: 8px;
     text-transform: uppercase;
@@ -139,7 +140,8 @@ h1 {
     font-weight: 600;
     position: absolute;
     top:50%;
-    left: 32%;
+    right: 38%;
+    
     z-index: 1;
     
 
@@ -151,8 +153,8 @@ h1 {
     background: rgb(121, 8, 8);
     color: white;
     transition: 0.2s;
-    font-size: 2.2rem;
-    padding: 40px;
+    font-size: 1.1rem;
+    padding: 20px;
 }
 
 
