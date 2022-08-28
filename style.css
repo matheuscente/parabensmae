@@ -1,0 +1,159 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: rgb(236, 176, 186);
+    margin: 100px;
+    background-image: url("./img/coracao-72.svg");
+    background-size: 8%;
+    
+}
+
+
+
+.conteudo {
+    min-height: 1400px;
+    max-height: 2000px;
+    display: grid;
+    background: pink;
+    min-width: 1200px;
+    border-radius: 4px;
+    box-shadow: 8px 8px 8px  rgb(202, 152, 160);
+    justify-content: center;
+    position: relative;
+
+   
+}
+
+.coracao {
+    justify-self: center;
+}
+
+
+.conteudo::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 12px;
+    background: red;
+    top: 150px;
+    left: -60px;
+}
+
+@keyframes teamo {
+   0% {color: rgb(255, 0, 0)}
+   25% {color: yellow}
+   50% {color: rgb(20, 65, 19)}
+   75% {color: yellow}
+   100% {color: rgb(255, 0, 0)}
+}
+
+h1 {
+    animation-name: teamo;
+    animation-duration: 5.3s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12rem;
+    letter-spacing: 1rem;
+    color: red;
+}
+
+#analogo {
+    padding: 40px 1px;
+    height: 600px;
+    width: 1000px;
+    justify-self: center;
+    position: relative;
+
+}
+
+.texto {
+    position: absolute;
+    font-family: feeling lovely;
+    color: #70514e;
+    font-size: 4rem;
+    list-style: none;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.i1, .i2, .i3, .i4, .i5 {
+    list-style: none;
+    opacity: 0;
+
+}
+.animar .i1 {
+    animation: anime1 4s ;
+    animation-delay: 1s;
+
+}
+
+@keyframes anime1 {
+   0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.animar .i2 {
+    animation: anime1 7s;
+    animation-delay: 5s;
+    
+    animation-iteration-count: unset;
+}
+
+.animar .i3 {
+    animation: anime1 4s;
+    animation-delay: 12s;
+}
+
+.animar .i4 {
+    animation: anime1 4s;
+    animation-delay: 16s;
+}
+
+.animar .i5 {
+    animation: anime1 5s;
+    animation-delay: 20s;
+}
+
+#botao {
+    padding: 40px;
+    font-size: 2rem;
+    background: red;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top:50%;
+    left: 32%;
+    z-index: 1;
+    
+
+
+
+}
+
+#botao:hover {
+    background: rgb(121, 8, 8);
+    color: white;
+    transition: 0.2s;
+    font-size: 2.2rem;
+    padding: 40px;
+}
+
+
+
